@@ -122,6 +122,33 @@ Laba1/fast:
 	$(MAKE) -f CMakeFiles\Laba1.dir\build.make CMakeFiles/Laba1.dir/build
 .PHONY : Laba1/fast
 
+ArabNumber.obj: ArabNumber.cpp.obj
+
+.PHONY : ArabNumber.obj
+
+# target to build an object file
+ArabNumber.cpp.obj:
+	$(MAKE) -f CMakeFiles\Laba1.dir\build.make CMakeFiles/Laba1.dir/ArabNumber.cpp.obj
+.PHONY : ArabNumber.cpp.obj
+
+ArabNumber.i: ArabNumber.cpp.i
+
+.PHONY : ArabNumber.i
+
+# target to preprocess a source file
+ArabNumber.cpp.i:
+	$(MAKE) -f CMakeFiles\Laba1.dir\build.make CMakeFiles/Laba1.dir/ArabNumber.cpp.i
+.PHONY : ArabNumber.cpp.i
+
+ArabNumber.s: ArabNumber.cpp.s
+
+.PHONY : ArabNumber.s
+
+# target to generate assembly for a file
+ArabNumber.cpp.s:
+	$(MAKE) -f CMakeFiles\Laba1.dir\build.make CMakeFiles/Laba1.dir/ArabNumber.cpp.s
+.PHONY : ArabNumber.cpp.s
+
 GreekNumber.obj: GreekNumber.cpp.obj
 
 .PHONY : GreekNumber.obj
@@ -185,6 +212,9 @@ help:
 	@echo ... Laba1
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... ArabNumber.obj
+	@echo ... ArabNumber.i
+	@echo ... ArabNumber.s
 	@echo ... GreekNumber.obj
 	@echo ... GreekNumber.i
 	@echo ... GreekNumber.s

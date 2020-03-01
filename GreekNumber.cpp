@@ -2,7 +2,9 @@
 // Created by lonep on 01.03.2020.
 //
 #include "GreekNumber.h"
+#include "ArabNumber.h"
 #include <iostream>
+
 int GreekNumber::checkBiggerNumberAndGive(char a1, char a2){
     char b[2];
     b[0] = a1;

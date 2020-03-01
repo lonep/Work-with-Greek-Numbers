@@ -1,5 +1,6 @@
 #include <iostream>
 #include "GreekNumber.h"
+#include "ArabNumber.h"
 #include <String>
 
 
@@ -7,7 +8,7 @@ using namespace std;
 // Составить метод для переволи из римских в арабские и наоборот
 // Простейшие операции с римскими числами
 //+5 - использовать юникод
-class ArabNumber{
+/*class ArabNumber{
 public:int Number;
 public: string FromArabToGreek() {
     short No = 0;
@@ -123,7 +124,7 @@ public: string FromArabToGreek() {
         }
 };
 
-/*class GreekNumber {
+class GreekNumber {
 public:string Number;
 private:
     int checkBiggerNumberAndGive(char a1, char a2){
@@ -185,6 +186,6 @@ int main() {
 GreekNumber Gr1;
 GreekNumber Gr2;
 Gr1.Number = "XII";
-Gr2.Number = "IL";
+Gr2.Number = "IX";
 cout << Gr1.GreekMinus(Gr2);
 }
