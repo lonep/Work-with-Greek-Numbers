@@ -4,6 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "D:/CLion 2019.2.2/Work-with-Greek-Numbers/GreekNumber.cpp" "D:/CLion 2019.2.2/Work-with-Greek-Numbers/cmake-build-debug/CMakeFiles/Laba1.dir/GreekNumber.cpp.obj"
   "D:/CLion 2019.2.2/Work-with-Greek-Numbers/main.cpp" "D:/CLion 2019.2.2/Work-with-Greek-Numbers/cmake-build-debug/CMakeFiles/Laba1.dir/main.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

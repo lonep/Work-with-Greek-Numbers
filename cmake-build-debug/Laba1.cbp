@@ -80,6 +80,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="D:/CLion 2019.2.2/Work-with-Greek-Numbers/GreekNumber.cpp">
+			<Option target="Laba1"/>
+		</Unit>
+		<Unit filename="D:/CLion 2019.2.2/Work-with-Greek-Numbers/GreekNumber.h">
+			<Option target="Laba1"/>
+		</Unit>
 		<Unit filename="D:/CLion 2019.2.2/Work-with-Greek-Numbers/main.cpp">
 			<Option target="Laba1"/>
 		</Unit>

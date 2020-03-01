@@ -1,4 +1,6 @@
 #include <iostream>
+#include "GreekNumber.h"
+#include <String>
 
 
 using namespace std;
@@ -119,11 +121,9 @@ public: string FromArabToGreek() {
         }
             return GreekNumber;
         }
-
-
-
 };
-class GreekNumber {
+
+/*class GreekNumber {
 public:string Number;
 private:
     int checkBiggerNumberAndGive(char a1, char a2){
@@ -176,16 +176,15 @@ public:
         if (FromGreekToArab() > Minus.FromGreekToArab()) {
             ArabRes.Number = FromGreekToArab() - Minus.FromGreekToArab();
             return ArabRes.FromArabToGreek();
-        } else
-            cerr << "We can't use  minus numbers.";
+        } else {
+            cout << "We can't use  minus numbers.";
+        }
     }
-
-
-};
+};*/
 int main() {
 GreekNumber Gr1;
 GreekNumber Gr2;
 Gr1.Number = "XII";
-Gr2.Number = "III";
+Gr2.Number = "IL";
 cout << Gr1.GreekMinus(Gr2);
 }
