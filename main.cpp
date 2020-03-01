@@ -186,6 +186,6 @@ int main() {
 GreekNumber Gr1;
 GreekNumber Gr2;
 Gr1.Number = "XII";
-Gr2.Number = "IV";
+Gr2.Number = "III";
 cout << Gr1.GreekMinus(Gr2);
 }
