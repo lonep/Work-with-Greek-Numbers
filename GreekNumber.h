@@ -9,7 +9,6 @@ using namespace std;
 class GreekNumber {
 public:
     string Number;
-
     int FromGreekToArab();
     string GreekPlus(GreekNumber plus1);
     string GreekMinus(GreekNumber Minus);
