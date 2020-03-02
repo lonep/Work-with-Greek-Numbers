@@ -10,5 +10,6 @@ class ArabNumber{
 public:
     int Number;
     string FromArabToGreek();
+    void EnterArabNumber();
 };
 #endif //LABA1_ARABNUMBER_H

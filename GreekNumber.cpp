@@ -11,19 +11,19 @@ int GreekNumber::checkBiggerNumberAndGive(char a1, char a2){
     b[1] = a2;
     short num[2];
     for (int i = 0; i < 2 ; i++){
-        if (b[i] == 'M')
+        if (b[i] == (char) 77)
             num[i] = 1000;
-        if (b[i] == 'D')
+        if (b[i] == (char) 68)
             num[i] = 500;
-        if (b[i] == 'C')
+        if (b[i] == (char) 67)
             num[i] = 100;
-        if (b[i] == 'L')
+        if (b[i] == (char) 76)
             num[i] = 50;
-        if (b[i] == 'X')
+        if (b[i] == (char) 88 )
             num[i] = 10;
-        if (b[i] == 'V')
+        if (b[i] == (char) 86)
             num[i] = 5;
-        if (b[i] == 'I')
+        if (b[i] == (char) 73)
             num[i] = 1;
     }
     if (num[0] >= num[1])
@@ -56,4 +56,14 @@ string GreekNumber::GreekMinus(GreekNumber Minus){
     } else {
         cout << "We can't use  minus numbers.";
     }
+}
+
+void GreekNumber::EnterGreekNumber(){
+    cout << "Enter your Greek number:" << '\n';
+    int test =0;
+    cin >> test;
+    if (typeid(test).name() == "string")
+        Number = test;
+    else
+        cout << "This operation only work with Greek numbers";
 }

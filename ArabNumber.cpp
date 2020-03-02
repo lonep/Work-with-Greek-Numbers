@@ -3,8 +3,8 @@
 //
 
 #include "ArabNumber.h"
-using namespace std;
 #include<string>
+#include <iostream>
 
 /*
  ASCII code
@@ -14,8 +14,9 @@ using namespace std;
  L - 76
  X - 88
  V - 86
- I - 80
+ I - 73
  */
+using namespace std;
  string ArabNumber::FromArabToGreek() {
         short No = 0;
         string GreekNumber;
@@ -128,4 +129,14 @@ using namespace std;
         }
         return GreekNumber;
     }
+
+void ArabNumber::EnterArabNumber() {
+     cout << "Enter your Arab number:" << '\n' ;
+    int test =0;
+    cin >> test;
+    if (typeid(test).name() == "integer")
+        Number = test;
+    else
+        cout << "This operation only work with Arab numbers";
+ }
 
