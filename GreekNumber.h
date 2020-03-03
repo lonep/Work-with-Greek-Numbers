@@ -8,11 +8,11 @@
 using namespace std;
 class GreekNumber {
 public:
-    string Number;
-
+string Number;
     int FromGreekToArab();
     string GreekPlus(GreekNumber plus1);
     string GreekMinus(GreekNumber Minus);
+    void EnterGreekNumber();
 
 private:
     int checkBiggerNumberAndGive(char a1, char a2);
