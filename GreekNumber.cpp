@@ -40,15 +40,14 @@ int GreekNumber::FromGreekToArab(){
 }
 
 
-string GreekNumber::GreekPlus(GreekNumber plus1){
+wchar_t* GreekNumber::GreekPlus(GreekNumber plus1){
     ArabNumber ArabRes;
     ArabRes.Number = FromGreekToArab() + plus1.FromGreekToArab();
     return ArabRes.FromArabToGreek();
 
 }
 
-
-string GreekNumber::GreekMinus(GreekNumber Minus){
+wchar_t* GreekNumber::GreekMinus(GreekNumber Minus){
     ArabNumber ArabRes;
     if (FromGreekToArab() > Minus.FromGreekToArab()) {
         ArabRes.Number = FromGreekToArab() - Minus.FromGreekToArab();

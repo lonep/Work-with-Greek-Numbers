@@ -9,7 +9,8 @@ using namespace std;
 class ArabNumber{
 public:
     int Number;
-    string FromArabToGreek();
+
+    wchar_t* FromArabToGreek();
     void EnterArabNumber();
 };
 #endif //LABA1_ARABNUMBER_H

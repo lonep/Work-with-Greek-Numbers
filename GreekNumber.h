@@ -10,8 +10,8 @@ class GreekNumber {
 public:
 string Number;
     int FromGreekToArab();
-    string GreekPlus(GreekNumber plus1);
-    string GreekMinus(GreekNumber Minus);
+    wchar_t* GreekPlus(GreekNumber plus1);
+    wchar_t*  GreekMinus(GreekNumber Minus);
     void EnterGreekNumber();
 
 private:
