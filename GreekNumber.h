@@ -8,7 +8,7 @@
 using namespace std;
 class GreekNumber {
 public:
-string Number;
+    wchar_t* Number = new wchar_t[10];
     int FromGreekToArab();
     wchar_t* GreekPlus(GreekNumber plus1);
     wchar_t*  GreekMinus(GreekNumber Minus);
