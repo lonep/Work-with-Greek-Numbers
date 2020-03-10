@@ -10,10 +10,7 @@ using namespace std;
 //+5 - использовать юникод
 
 int main() {
-GreekNumber Gr1;
-Gr1.Number[0] = L'\u216f';
-Gr1.Number[1] = L'\u2160';
-int k = Gr1.FromGreekToArab();
-
-
+ArabNumber Ar1;
+Ar1.Number = 3;
+cout << Ar1.FromArabToGreek();
 }

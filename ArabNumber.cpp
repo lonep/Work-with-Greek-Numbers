@@ -22,7 +22,6 @@ using namespace std;
 
 wchar_t* ArabNumber::FromArabToGreek() {
         short No = 0;
-
         wchar_t *Text = new wchar_t[10];
         string GreekNumber;
         if (Number / 1000 > 0) {
@@ -52,7 +51,7 @@ wchar_t* ArabNumber::FromArabToGreek() {
                 }
                 else {
                     Text[No] = L'\u216d';
-                    Text[No-1] = L'\u216e';
+                    Text[No] = L'\u216e';
                     Number -= 400;
                     No += 2;
                 }
@@ -112,7 +111,7 @@ wchar_t* ArabNumber::FromArabToGreek() {
             if (Number / 1 == 4) {
                 if (Text[No-1] == L'\u2164') {
                     Text[No-1] = L'\u2160';
-                    Text[No] = L'\u2169';
+                    Text[No] = L'\u2164';
                     No += 1;
                     Number -= 4;
                 }
