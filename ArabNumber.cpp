@@ -112,7 +112,7 @@ using namespace std;
                     Number -= 4;
                 }
                 else {
-                    GreekNumber += (char) 88;
+                    GreekNumber += (char) 73;
                     GreekNumber += (char) 86;
                     Number -= 4;
                     No += 2;
@@ -130,7 +130,7 @@ using namespace std;
         return GreekNumber;
     }
 
-void ArabNumber::EnterArabNumber() {
+/*void ArabNumber::EnterArabNumber() {
      cout << "Enter your Arab number:" << '\n' ;
     int test =0;
     cin >> test;
@@ -138,5 +138,5 @@ void ArabNumber::EnterArabNumber() {
         Number = test;
     else
         cout << "This operation only work with Arab numbers";
- }
+ }*/
 
