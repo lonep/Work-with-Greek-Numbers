@@ -11,6 +11,6 @@ using namespace std;
 
 int main() {
 ArabNumber Ar1;
-Ar1.Number = 3;
+Ar1.Number = 14;
 cout << Ar1.FromArabToGreek();
 }

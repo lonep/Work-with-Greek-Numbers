@@ -116,8 +116,8 @@ wchar_t* ArabNumber::FromArabToGreek() {
                     Number -= 4;
                 }
                 else {
-                    Text[No] = L'\u2169';
-                    Text[No] = L'\u2164';
+                    Text[No] = L'\u2160';
+                    Text[No+1] = L'\u2164';
                     Number -= 4;
                     No += 2;
                 }
