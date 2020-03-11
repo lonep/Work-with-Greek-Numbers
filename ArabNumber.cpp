@@ -130,13 +130,11 @@ using namespace std;
         return GreekNumber;
     }
 
-/*void ArabNumber::EnterArabNumber() {
-     cout << "Enter your Arab number:" << '\n' ;
+void ArabNumber::EnterArabNumber() {
+     cout << "Enter your Arab number:" ;
     int test =0;
     cin >> test;
-    if (typeid(test).name() == "integer")
-        Number = test;
-    else
-        cout << "This operation only work with Arab numbers";
- }*/
+    Number = test;
+
+ }
 

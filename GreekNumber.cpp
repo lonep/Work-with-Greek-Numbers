@@ -59,11 +59,8 @@ string GreekNumber::GreekMinus(GreekNumber Minus){
 }
 
 void GreekNumber::EnterGreekNumber(){
-    cout << "Enter your Greek number:" << '\n';
-    int test =0;
+    cout << "Enter your Greek number:";
+    string test;
     cin >> test;
-    if (typeid(test).name() == "string")
-        Number = test;
-    else
-        cout << "This operation only work with Greek numbers";
+    Number = test;
 }

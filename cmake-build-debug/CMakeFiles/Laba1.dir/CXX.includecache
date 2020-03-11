@@ -6,21 +6,27 @@
 
 #IncludeRegexTransform: 
 
+D:/CLion 2019.2.2/Work-with-Greek-Numbers/ArabNumber.cpp
+ArabNumber.h
+D:/CLion 2019.2.2/Work-with-Greek-Numbers/ArabNumber.h
+string
+-
+iostream
+-
+
 D:/CLion 2019.2.2/Work-with-Greek-Numbers/ArabNumber.h
 string
 -
 
-D:/CLion 2019.2.2/Work-with-Greek-Numbers/GreekNumber.h
-string
--
-
-D:/CLion 2019.2.2/Work-with-Greek-Numbers/main.cpp
-iostream
--
+D:/CLion 2019.2.2/Work-with-Greek-Numbers/GreekNumber.cpp
 GreekNumber.h
 D:/CLion 2019.2.2/Work-with-Greek-Numbers/GreekNumber.h
 ArabNumber.h
 D:/CLion 2019.2.2/Work-with-Greek-Numbers/ArabNumber.h
-String
+iostream
+-
+
+D:/CLion 2019.2.2/Work-with-Greek-Numbers/GreekNumber.h
+string
 -
 
