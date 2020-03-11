@@ -51,7 +51,7 @@ wchar_t* ArabNumber::FromArabToGreek() {
                 }
                 else {
                     Text[No] = L'\u216d';
-                    Text[No] = L'\u216e';
+                    Text[No+1] = L'\u216e';
                     Number -= 400;
                     No += 2;
                 }
@@ -85,7 +85,7 @@ wchar_t* ArabNumber::FromArabToGreek() {
                 }
                 else {
                     Text[No] = L'\u2169';
-                    Text[No] = L'\u216c';
+                    Text[No+1] = L'\u216c';
                     Number -= 40;
                     No += 2;
                 }
@@ -130,6 +130,9 @@ wchar_t* ArabNumber::FromArabToGreek() {
 
                 }
             }
+
+
+
         }
     return Text;
     }
