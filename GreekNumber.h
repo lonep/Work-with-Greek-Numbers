@@ -10,14 +10,10 @@ class GreekNumber {
 public:
 string Number;
     int FromGreekToArab();
-    static string GreekPlus(GreekNumber plus1, GreekNumber plus2);
-    static string GreekPlus(string plus1, string plus2);
 
-    static string GreekMinus(GreekNumber Minus1, GreekNumber Minus2);
-    static string GreekMinus(string Minus1, string Minus2);
 
     string operator+ (GreekNumber right);
-    void EnterGreekNumber();
+
 
 private:
     int checkBiggerNumberAndGive(char a1, char a2);
