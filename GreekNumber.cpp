@@ -6,6 +6,7 @@
 #include <iostream>
 #include <stdlib.h>
 
+using namespace std;
 
 int GreekNumber::checkBiggerNumberAndGive(char a1, char a2){
     char b[2];
@@ -66,9 +67,15 @@ istream& GreekNumber::operator>> (istream in){
         this->Number = ArabRes.FromArabToGreek();
     }
     else {
-        in >> this->Number;
+        this->Number = a;
     }
+    return in;
+}
 
+ostream& GreekNumber::operator<<(ostream &out) {
+    string a = Number;
+    out << a;
+    return out;
 }
 
 

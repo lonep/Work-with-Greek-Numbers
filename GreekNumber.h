@@ -13,6 +13,7 @@ string Number;
     string operator+ (GreekNumber right);
     string operator+ (string right);
     istream& operator>> (istream in);
+    ostream& operator<< (ostream &out);
 private:
     int checkBiggerNumberAndGive(char a1, char a2);
 
