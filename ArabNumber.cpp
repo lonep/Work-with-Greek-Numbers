@@ -130,11 +130,5 @@ using namespace std;
         return GreekNumber;
     }
 
-void ArabNumber::EnterArabNumber() {
-     cout << "Enter your Arab number:" ;
-    int test =0;
-    cin >> test;
-    Number = test;
 
- }
 
