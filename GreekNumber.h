@@ -10,11 +10,9 @@ class GreekNumber {
 public:
 string Number;
     int FromGreekToArab();
-
-
     string operator+ (GreekNumber right);
-
-
+    string operator+ (string right);
+    istream& operator>> (istream in);
 private:
     int checkBiggerNumberAndGive(char a1, char a2);
 
