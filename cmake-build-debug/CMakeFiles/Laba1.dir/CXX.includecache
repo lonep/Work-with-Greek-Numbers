@@ -10,6 +10,16 @@ D:/CLion 2019.2.2/Work-with-Greek-Numbers/ArabNumber.h
 string
 -
 
+D:/CLion 2019.2.2/Work-with-Greek-Numbers/GreekNumber.cpp
+GreekNumber.h
+D:/CLion 2019.2.2/Work-with-Greek-Numbers/GreekNumber.h
+ArabNumber.h
+D:/CLion 2019.2.2/Work-with-Greek-Numbers/ArabNumber.h
+iostream
+-
+stdlib.h
+-
+
 D:/CLion 2019.2.2/Work-with-Greek-Numbers/GreekNumber.h
 string
 -

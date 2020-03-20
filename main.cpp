@@ -13,6 +13,6 @@ int main() {
 GreekNumber Gr, Gr1;
 Gr.Number = "VI";
 Gr1.Number = "IV";
-Gr += Gr1;
-cout << 1 * 15;
+Gr *= Gr1;
+cout << Gr.Number;
 }

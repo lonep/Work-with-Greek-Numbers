@@ -71,6 +71,13 @@ string GreekNumber::operator* (GreekNumber right) {
     return ArabRes.FromArabToGreek();
 }
 
+string GreekNumber::operator*=(GreekNumber right) {
+    ArabNumber ArabRes;
+    ArabRes.Number = this->FromGreekToArab() * right.FromGreekToArab();
+    this->Number = ArabRes.FromArabToGreek();
+    return this->Number;
+}
+
 istream& GreekNumber::operator>> (istream in){
     string a;
     in >> a;
@@ -90,6 +97,8 @@ ostream& GreekNumber::operator<<(ostream &out) {
     out << a;
     return out;
 }
+
+
 
 
 
