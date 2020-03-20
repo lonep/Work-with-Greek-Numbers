@@ -17,7 +17,7 @@ string Number;
     string operator- (GreekNumber right);
     string operator-= (GreekNumber right);
 
-
+    void operator= (GreekNumber right);
 
     string operator* (GreekNumber right);
     string operator*= (GreekNumber right);

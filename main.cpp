@@ -13,6 +13,5 @@ int main() {
 GreekNumber Gr, Gr1;
 Gr.Number = "VI";
 Gr1.Number = "IV";
-Gr *= Gr1;
-cout << Gr.Number;
+cout << Gr - Gr1;
 }
