@@ -12,6 +12,9 @@ string Number;
     int FromGreekToArab();
     string operator+ (GreekNumber right);
     string operator+ (string right);
+    string operator+= (GreekNumber right);
+
+    string operator* (GreekNumber right);
     istream& operator>> (istream in);
     ostream& operator<< (ostream &out);
 private:
