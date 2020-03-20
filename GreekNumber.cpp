@@ -52,42 +52,46 @@ string GreekNumber::operator+(string right) {
     return ArabRes.FromArabToGreek();
 }
 
-string GreekNumber::operator+(GreekNumber right) {
+GreekNumber GreekNumber::operator+(GreekNumber right) {
     ArabNumber ArabRes;
     ArabRes.Number = this->FromGreekToArab()+right.FromGreekToArab();
-    return ArabRes.FromArabToGreek();
+    right.Number = ArabRes.FromArabToGreek();
+    return right;
 }
 
-string GreekNumber::operator+=(GreekNumber right) {
+void GreekNumber::operator+=(GreekNumber right) {
     ArabNumber ArabRes;
     ArabRes.Number = this->FromGreekToArab() + right.FromGreekToArab();
     this->Number = ArabRes.FromArabToGreek();
-    return this->Number;
 }
 
-string GreekNumber::operator* (GreekNumber right) {
+GreekNumber GreekNumber::operator* (GreekNumber right) {
     ArabNumber ArabRes;
     ArabRes.Number = this->FromGreekToArab() * right.FromGreekToArab();
-    return ArabRes.FromArabToGreek();
+    right.Number = ArabRes.FromArabToGreek();
+    return right;
 }
 
-string GreekNumber::operator*=(GreekNumber right) {
+void GreekNumber::operator*=(GreekNumber right) {
     ArabNumber ArabRes;
     ArabRes.Number = this->FromGreekToArab() * right.FromGreekToArab();
     this->Number = ArabRes.FromArabToGreek();
-    return this->Number;
 }
 
-string GreekNumber::operator- (GreekNumber right){
+GreekNumber GreekNumber::operator- (GreekNumber right){
     ArabNumber ArabRes;
-    ArabRes.Number = this->FromGreekToArab() - right.FromGreekToArab();
-    return this->Number;
+    if (this->FromGreekToArab() > right.FromGreekToArab()) {
+        ArabRes.Number = this->FromGreekToArab() - right.FromGreekToArab();
+        right.Number = ArabRes.FromArabToGreek();
+        return right;
+    }
 }
 
 void GreekNumber::operator= (GreekNumber right){
     this->Number = right.Number;
 
 }
+
 
 istream& GreekNumber::operator>> (istream in){
     string a;

@@ -10,17 +10,19 @@ class GreekNumber {
 public:
 string Number;
     int FromGreekToArab();
-    string operator+ (GreekNumber right);
-    string operator+ (string right);
-    string operator+= (GreekNumber right);
+    GreekNumber operator+ (GreekNumber right);
+    string operator+ (string right); // Потом удалить, если не понадобится
+    void operator+= (GreekNumber right);
 
-    string operator- (GreekNumber right);
-    string operator-= (GreekNumber right);
+    GreekNumber operator- (GreekNumber right);
+    void operator-= (GreekNumber right);
 
     void operator= (GreekNumber right);
 
-    string operator* (GreekNumber right);
-    string operator*= (GreekNumber right);
+    GreekNumber operator* (GreekNumber right);
+    void operator*= (GreekNumber right);
+
+    GreekNumber operator++ ();
 
     istream& operator>> (istream in);
     ostream& operator<< (ostream &out);
