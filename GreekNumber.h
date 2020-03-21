@@ -18,6 +18,8 @@ string Number;
     GreekNumber operator-= (GreekNumber right);
 
     void operator= (GreekNumber right);
+    void operator= (string right);
+    void operator= (int right);
 
     GreekNumber operator* (GreekNumber right);
     GreekNumber operator*= (GreekNumber right);

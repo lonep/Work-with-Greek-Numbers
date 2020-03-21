@@ -91,9 +91,17 @@ GreekNumber GreekNumber::operator- (GreekNumber right){
 
 void GreekNumber::operator= (GreekNumber right){
     this->Number = right.Number;
-
 }
 
+void GreekNumber::operator= (int right){
+    ArabNumber ArabRes;
+    ArabRes.Number = right;
+    this->Number=ArabRes.FromArabToGreek();
+}
+
+void GreekNumber::operator= (string right){
+    this->Number = right;
+}
 GreekNumber GreekNumber::operator++ (){
     GreekNumber Gr1;
     Gr1.Number = "I";
