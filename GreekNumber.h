@@ -12,20 +12,21 @@ string Number;
     int FromGreekToArab();
     GreekNumber operator+ (GreekNumber right);
     string operator+ (string right); // Потом удалить, если не понадобится
-    void operator+= (GreekNumber right);
+    GreekNumber operator+= (GreekNumber right);
 
     GreekNumber operator- (GreekNumber right);
-    void operator-= (GreekNumber right);
+    GreekNumber operator-= (GreekNumber right);
 
     void operator= (GreekNumber right);
 
     GreekNumber operator* (GreekNumber right);
-    void operator*= (GreekNumber right);
+    GreekNumber operator*= (GreekNumber right);
 
     GreekNumber operator++ ();
+    GreekNumber operator++ (int);
 
-    istream& operator>> (istream in);
-    ostream& operator<< (ostream &out);
+    friend istream& operator>> (istream& in, GreekNumber& right);
+    friend ostream& operator<< (ostream& out, GreekNumber& right);
 private:
     int checkBiggerNumberAndGive(char a1, char a2);
 

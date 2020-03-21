@@ -10,10 +10,23 @@ using namespace std;
 //+5 - использовать юникод
 
 int main() {
-GreekNumber Gr, Gr1, Gr3;
+/*GreekNumber Gr, Gr1, Gr3, Gr4;
+int a,b,c,d;
 Gr.Number = "VI";
 Gr1.Number = "IV";
-Gr3 = (Gr1 + Gr)  * Gr1;
-cout << Gr3.Number;
+GreekNumber Gr2;
+Gr2.Number = "X";
+Gr3.Number = "II";
+a = 6;
+b = 4;
+c = 2;
+d = a += (b+10) + ++c;
+cout << d <<'\n';
+Gr4 = Gr += (Gr1+Gr2) + ++Gr3;
+cout << Gr4.Number;*/
+
+GreekNumber Gr;
+cin >> Gr;
+cout << Gr;
 
 }

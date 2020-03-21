@@ -59,10 +59,11 @@ GreekNumber GreekNumber::operator+(GreekNumber right) {
     return right;
 }
 
-void GreekNumber::operator+=(GreekNumber right) {
+GreekNumber GreekNumber::operator+=(GreekNumber right) {
     ArabNumber ArabRes;
     ArabRes.Number = this->FromGreekToArab() + right.FromGreekToArab();
     this->Number = ArabRes.FromArabToGreek();
+    return *this;
 }
 
 GreekNumber GreekNumber::operator* (GreekNumber right) {
@@ -72,10 +73,11 @@ GreekNumber GreekNumber::operator* (GreekNumber right) {
     return right;
 }
 
-void GreekNumber::operator*=(GreekNumber right) {
+GreekNumber GreekNumber::operator*=(GreekNumber right) {
     ArabNumber ArabRes;
     ArabRes.Number = this->FromGreekToArab() * right.FromGreekToArab();
     this->Number = ArabRes.FromArabToGreek();
+    return *this;
 }
 
 GreekNumber GreekNumber::operator- (GreekNumber right){
@@ -92,23 +94,36 @@ void GreekNumber::operator= (GreekNumber right){
 
 }
 
+GreekNumber GreekNumber::operator++ (){
+    GreekNumber Gr1;
+    Gr1.Number = "I";
+    *this += Gr1;
+    return  *this;
+}
 
-istream& GreekNumber::operator>> (istream in){
+GreekNumber GreekNumber::operator++ (int){
+    GreekNumber temp;
+    temp.Number = this->Number;
+    ++(*this);
+    return temp;
+}
+
+istream& operator>> (istream& in, GreekNumber& right){
     string a;
     in >> a;
     if (a[0] == '1' || a[0] == '2' || a[0] == '3' || a[0] == '4' || a[0] == '5' || a[0] == '6' || a[0] == '7' || a[0] == '8' || a[0] == '9' || a[0] == '0') {
         ArabNumber ArabRes;
         ArabRes.Number = atoi(a.c_str());
-        this->Number = ArabRes.FromArabToGreek();
+        right.Number = ArabRes.FromArabToGreek();
     }
     else {
-        this->Number = a;
+        right.Number = a;
     }
     return in;
 }
 
-ostream& GreekNumber::operator<<(ostream &out) {
-    string a = Number;
+ostream& operator<<(ostream& out, GreekNumber& right) {
+    string a = right.Number;
     out << a;
     return out;
 }
