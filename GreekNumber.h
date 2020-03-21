@@ -11,11 +11,12 @@ public:
 string Number;
     int FromGreekToArab();
     GreekNumber operator+ (GreekNumber right);
-    string operator+ (string right); // Потом удалить, если не понадобится
     GreekNumber operator+= (GreekNumber right);
+    GreekNumber operator+ (int right);
 
     GreekNumber operator- (GreekNumber right);
     GreekNumber operator-= (GreekNumber right);
+    GreekNumber operator- (int right);
 
     void operator= (GreekNumber right);
     void operator= (string right);
@@ -23,6 +24,8 @@ string Number;
 
     GreekNumber operator* (GreekNumber right);
     GreekNumber operator*= (GreekNumber right);
+    GreekNumber operator* (int right);
+
 
     GreekNumber operator++ ();
     GreekNumber operator++ (int);

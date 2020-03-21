@@ -25,7 +25,5 @@ cout << d <<'\n';
 Gr4 = Gr += (Gr1+Gr2) + ++Gr3;
 cout << Gr4.Number;*/
 
-GreekNumber Gr1;
-Gr1 = "VII";
-cout << Gr1;
+
 }
