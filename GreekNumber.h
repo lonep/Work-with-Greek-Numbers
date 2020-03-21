@@ -12,10 +12,12 @@ string Number;
     int FromGreekToArab();
     GreekNumber operator+ (GreekNumber right);
     GreekNumber operator+= (GreekNumber right);
+    GreekNumber operator+= (int right);
     GreekNumber operator+ (int right);
 
     GreekNumber operator- (GreekNumber right);
     GreekNumber operator-= (GreekNumber right);
+    GreekNumber operator-= (int right);
     GreekNumber operator- (int right);
 
     void operator= (GreekNumber right);
@@ -24,7 +26,19 @@ string Number;
 
     GreekNumber operator* (GreekNumber right);
     GreekNumber operator*= (GreekNumber right);
+    GreekNumber operator*= (int right);
     GreekNumber operator* (int right);
+
+    bool operator> (GreekNumber right);
+    bool operator> (int right);
+    bool operator>= (GreekNumber right);
+    bool operator>= (int right);
+    bool operator< (GreekNumber right);
+    bool operator< (int right);
+    bool operator<= (GreekNumber right);
+    bool operator<= (int right);
+
+
 
 
     GreekNumber operator++ ();

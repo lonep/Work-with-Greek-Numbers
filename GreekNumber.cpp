@@ -43,6 +43,54 @@ int GreekNumber::FromGreekToArab(){
 }
 
 
+bool GreekNumber::operator>(GreekNumber right){
+    if (this->FromGreekToArab() > right.FromGreekToArab())
+        return 1;
+    else
+        return 0;
+}
+bool GreekNumber::operator> (int right){
+    if (this->FromGreekToArab() > right)
+        return 1;
+    else
+        return 0;
+}
+bool GreekNumber::operator>= (GreekNumber right){
+    if (this->FromGreekToArab() >= right.FromGreekToArab())
+        return 1;
+    else
+        return 0;
+}
+bool GreekNumber::operator>= (int right){
+    if (this->FromGreekToArab() >= right)
+        return 1;
+    else
+        return 0;
+}
+bool GreekNumber::operator< (int right){
+    if (this->FromGreekToArab() < right)
+        return 1;
+    else
+        return 0;
+}
+bool GreekNumber::operator< (GreekNumber right){
+    if (this->FromGreekToArab() < right.FromGreekToArab())
+        return 1;
+    else
+        return 0;
+}
+bool GreekNumber::operator<= (GreekNumber right){
+    if (this->FromGreekToArab() <= right.FromGreekToArab())
+        return 1;
+    else
+        return 0;
+}
+bool GreekNumber::operator<= (int right){
+    if (this->FromGreekToArab() <= right)
+        return 1;
+    else
+        return 0;
+}
 
 
 
@@ -64,6 +112,10 @@ GreekNumber GreekNumber::operator+=(GreekNumber right) {
     this->Number = ArabRes.FromArabToGreek();
     return *this;
 }
+GreekNumber GreekNumber::operator+=(int right){
+    *this = *this + right;
+    return  *this;
+}
 
 GreekNumber GreekNumber::operator* (GreekNumber right) {
     ArabNumber ArabRes;
@@ -82,6 +134,10 @@ GreekNumber GreekNumber::operator*=(GreekNumber right) {
     ArabRes.Number = this->FromGreekToArab() * right.FromGreekToArab();
     this->Number = ArabRes.FromArabToGreek();
     return *this;
+}
+GreekNumber GreekNumber::operator*=(int right){
+    *this = *this * right;
+    return  *this;
 }
 
 GreekNumber GreekNumber::operator- (GreekNumber right){
@@ -113,6 +169,15 @@ GreekNumber GreekNumber::operator-= (GreekNumber right){
         return *this;
     }
     else{
+        cout << "We can't work with negative numbers";
+    }
+}
+GreekNumber GreekNumber::operator-= (int right){
+    if (this->FromGreekToArab() > right){
+        *this = *this - right;
+        return *this;
+    }
+    else {
         cout << "We can't work with negative numbers";
     }
 }
