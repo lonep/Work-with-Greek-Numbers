@@ -91,14 +91,39 @@ bool GreekNumber::operator<= (int right){
     else
         return 0;
 }
+// ==
+// !=
+bool GreekNumber::operator== (GreekNumber right){
+    if (this->FromGreekToArab() == right.FromGreekToArab())
+        return 1;
+    else
+        return 0;
+}
+bool GreekNumber::operator== (int right){
+    if (this->FromGreekToArab() == right)
+        return 1;
+    else
+return 0;
+}
 
-
+bool GreekNumber::operator!= (GreekNumber right){
+    if (this->FromGreekToArab() != right.FromGreekToArab())
+        return 1;
+    else
+        return 0;
+}
+bool GreekNumber::operator!= (int right){
+    if (this->FromGreekToArab() != right)
+        return 1;
+    else
+        return 0;
+}
 
 GreekNumber GreekNumber::operator+(GreekNumber right) {
     ArabNumber ArabRes;
     ArabRes.Number = this->FromGreekToArab()+right.FromGreekToArab();
-    right.Number = ArabRes.FromArabToGreek();
-    return right;
+    this->Number = ArabRes.FromArabToGreek();
+    return *this;
 }
 GreekNumber GreekNumber::operator+(int right){
  ArabNumber ArabRes;
@@ -106,10 +131,8 @@ GreekNumber GreekNumber::operator+(int right){
  *this = ArabRes.FromArabToGreek();
  return *this;
 }
-GreekNumber GreekNumber::operator+=(GreekNumber right) {
-    ArabNumber ArabRes;
-    ArabRes.Number = this->FromGreekToArab() + right.FromGreekToArab();
-    this->Number = ArabRes.FromArabToGreek();
+GreekNumber GreekNumber::operator+= (GreekNumber right) {
+    *this = *this + right;
     return *this;
 }
 GreekNumber GreekNumber::operator+=(int right){
@@ -195,9 +218,11 @@ void GreekNumber::operator= (string right){
     this->Number = right;
 }
 GreekNumber GreekNumber::operator++ (){
+    ArabNumber ArabRes;
     GreekNumber Gr1;
     Gr1.Number = "I";
-    *this += Gr1;
+    ArabRes.Number = Gr1.FromGreekToArab() + this->FromGreekToArab();
+    this->Number = ArabRes.FromArabToGreek();
     return  *this;
 }
 GreekNumber GreekNumber::operator++ (int){
@@ -214,15 +239,22 @@ istream& operator>> (istream& in, GreekNumber& right){
         ArabRes.Number = atoi(a.c_str());
         right.Number = ArabRes.FromArabToGreek();
     }
-    else {
+    else if (a[0] ==  'I' || a[0] == 'V' || a[0] == 'X' || a[0] == 'L' || a[0] == 'C' || a[0] == 'D' || a[0] == 'M') {
         right.Number = a;
     }
+    else
+        cout << "You tried to input wrong data";
     return in;
 }
 ostream& operator<<(ostream& out, GreekNumber& right) {
     string a = right.Number;
     out << a;
     return out;
+}
+GreekNumber::operator int ()  {
+    int Result;
+    Result = this->FromGreekToArab();
+    return Result;
 }
 
 

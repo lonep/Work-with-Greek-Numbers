@@ -130,5 +130,19 @@ using namespace std;
         return GreekNumber;
     }
 
-
+istream& operator>> (istream& in, ArabNumber& right){
+     string a;
+     in >> a;
+    if (a[0] == '1' || a[0] == '2' || a[0] == '3' || a[0] == '4' || a[0] == '5' || a[0] == '6' || a[0] == '7' || a[0] == '8' || a[0] == '9'){
+        right.Number =  atoi(a.c_str());
+    }
+    else {
+        cout << "You try input wrong number";
+    }
+    return in;
+ }
+ostream& operator<< (ostream& out, ArabNumber& right){
+    out << right.Number;
+    return out;
+}
 

@@ -37,12 +37,19 @@ string Number;
     bool operator< (int right);
     bool operator<= (GreekNumber right);
     bool operator<= (int right);
+    bool operator== (GreekNumber right);
+    bool operator== (int right );
+    bool operator != (GreekNumber right);
+    bool operator != (int right);
+
 
 
 
 
     GreekNumber operator++ ();
     GreekNumber operator++ (int);
+
+     operator int ( );
 
     friend istream& operator>> (istream& in, GreekNumber& right);
     friend ostream& operator<< (ostream& out, GreekNumber& right);
