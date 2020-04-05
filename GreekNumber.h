@@ -5,15 +5,14 @@
 #ifndef LABA1_GREEKNUMBER_H
 #define LABA1_GREEKNUMBER_H
 #include <string>
+#include "AbstractGreek.h"
 using namespace std;
-class GreekNumber {
+class GreekNumber: public AbstractGreek {
 public:
-string Number;
     int FromGreekToArab();
-    string GreekPlus(GreekNumber plus1);
-    string GreekMinus(GreekNumber Minus);
-    void EnterGreekNumber();
-
+    string ToString() override;
+    double ToDouble() override;
+    GreekNumber operator+ (GreekNumber plus);
 private:
     int checkBiggerNumberAndGive(char a1, char a2);
 };

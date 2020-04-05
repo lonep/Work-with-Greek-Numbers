@@ -4,7 +4,7 @@
 #include "GreekNumber.h"
 #include "ArabNumber.h"
 #include <iostream>
-
+using namespace std;
 int GreekNumber::checkBiggerNumberAndGive(char a1, char a2){
     char b[2];
     b[0] = a1;
@@ -39,31 +39,15 @@ int GreekNumber::FromGreekToArab(){
     return ArabNumber;
 }
 
-
-string GreekNumber::GreekPlus(GreekNumber plus1){
-    ArabNumber ArabRes;
-    ArabRes.Number = FromGreekToArab() + plus1.FromGreekToArab();
-    return ArabRes.FromArabToGreek();
-
+GreekNumber GreekNumber::operator+(GreekNumber plus) {
+    GreekNumber res;
+    res.Number = this->FromGreekToArab() + plus.FromGreekToArab();
+    return res;
 }
 
-
-string GreekNumber::GreekMinus(GreekNumber Minus){
-    ArabNumber ArabRes;
-    if (FromGreekToArab() > Minus.FromGreekToArab()) {
-        ArabRes.Number = FromGreekToArab() - Minus.FromGreekToArab();
-        return ArabRes.FromArabToGreek();
-    } else {
-        cout << "We can't use  minus numbers.";
-    }
+string GreekNumber::ToString() {
+    return Number;
 }
-
-void GreekNumber::EnterGreekNumber(){
-    cout << "Enter your Greek number:" << '\n';
-    int test =0;
-    cin >> test;
-    if (typeid(test).name() == "string")
-        Number = test;
-    else
-        cout << "This operation only work with Greek numbers";
+double GreekNumber::ToDouble() {
+    return this->FromGreekToArab();
 }

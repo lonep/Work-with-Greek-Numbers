@@ -6,21 +6,27 @@
 
 #IncludeRegexTransform: 
 
-D:/CLion 2019.2.2/Work-with-Greek-Numbers/ArabNumber.h
+C:/Users/lonep/Documents/GitHub/Work-with-Greek-Numbers/AbstractGreek.h
 string
 -
 
-D:/CLion 2019.2.2/Work-with-Greek-Numbers/GreekNumber.h
+C:/Users/lonep/Documents/GitHub/Work-with-Greek-Numbers/ArabNumber.h
 string
 -
 
-D:/CLion 2019.2.2/Work-with-Greek-Numbers/main.cpp
+C:/Users/lonep/Documents/GitHub/Work-with-Greek-Numbers/GreekNumber.h
+string
+-
+AbstractGreek.h
+C:/Users/lonep/Documents/GitHub/Work-with-Greek-Numbers/AbstractGreek.h
+
+C:/Users/lonep/Documents/GitHub/Work-with-Greek-Numbers/main.cpp
 iostream
 -
 GreekNumber.h
-D:/CLion 2019.2.2/Work-with-Greek-Numbers/GreekNumber.h
+C:/Users/lonep/Documents/GitHub/Work-with-Greek-Numbers/GreekNumber.h
 ArabNumber.h
-D:/CLion 2019.2.2/Work-with-Greek-Numbers/ArabNumber.h
+C:/Users/lonep/Documents/GitHub/Work-with-Greek-Numbers/ArabNumber.h
 String
 -
 
