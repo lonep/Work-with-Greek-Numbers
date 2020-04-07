@@ -3,4 +3,4 @@ project(Laba1)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(Laba1 main.cpp GreekNumber.cpp GreekNumber.h ArabNumber.cpp ArabNumber.h AbstractGreek.h GreekDouble.cpp GreekDouble.h)
+add_executable(Laba1 main.cpp GreekNumber.cpp GreekNumber.h ArabNumber.cpp ArabNumber.h AbstractGreek.h GreekDouble.cpp GreekDouble.h AbstractGreek.h.cpp)

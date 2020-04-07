@@ -14,6 +14,6 @@ public:
     double ToDouble() override;
     GreekNumber operator+ (GreekNumber plus);
 private:
-    int checkBiggerNumberAndGive(char a1, char a2);
+
 };
 #endif //LABA1_GREEKNUMBER_H

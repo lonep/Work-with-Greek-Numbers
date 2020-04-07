@@ -122,6 +122,33 @@ Laba1/fast:
 	$(MAKE) -f CMakeFiles\Laba1.dir\build.make CMakeFiles/Laba1.dir/build
 .PHONY : Laba1/fast
 
+AbstractGreek.h.obj: AbstractGreek.h.cpp.obj
+
+.PHONY : AbstractGreek.h.obj
+
+# target to build an object file
+AbstractGreek.h.cpp.obj:
+	$(MAKE) -f CMakeFiles\Laba1.dir\build.make CMakeFiles/Laba1.dir/AbstractGreek.h.cpp.obj
+.PHONY : AbstractGreek.h.cpp.obj
+
+AbstractGreek.h.i: AbstractGreek.h.cpp.i
+
+.PHONY : AbstractGreek.h.i
+
+# target to preprocess a source file
+AbstractGreek.h.cpp.i:
+	$(MAKE) -f CMakeFiles\Laba1.dir\build.make CMakeFiles/Laba1.dir/AbstractGreek.h.cpp.i
+.PHONY : AbstractGreek.h.cpp.i
+
+AbstractGreek.h.s: AbstractGreek.h.cpp.s
+
+.PHONY : AbstractGreek.h.s
+
+# target to generate assembly for a file
+AbstractGreek.h.cpp.s:
+	$(MAKE) -f CMakeFiles\Laba1.dir\build.make CMakeFiles/Laba1.dir/AbstractGreek.h.cpp.s
+.PHONY : AbstractGreek.h.cpp.s
+
 ArabNumber.obj: ArabNumber.cpp.obj
 
 .PHONY : ArabNumber.obj
@@ -239,6 +266,9 @@ help:
 	@echo ... Laba1
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... AbstractGreek.h.obj
+	@echo ... AbstractGreek.h.i
+	@echo ... AbstractGreek.h.s
 	@echo ... ArabNumber.obj
 	@echo ... ArabNumber.i
 	@echo ... ArabNumber.s

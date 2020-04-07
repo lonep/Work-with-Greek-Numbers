@@ -83,6 +83,9 @@
 		<Unit filename="C:/Users/lonep/Documents/GitHub/Work-with-Greek-Numbers/AbstractGreek.h">
 			<Option target="Laba1"/>
 		</Unit>
+		<Unit filename="C:/Users/lonep/Documents/GitHub/Work-with-Greek-Numbers/AbstractGreek.h.cpp">
+			<Option target="Laba1"/>
+		</Unit>
 		<Unit filename="C:/Users/lonep/Documents/GitHub/Work-with-Greek-Numbers/ArabNumber.cpp">
 			<Option target="Laba1"/>
 		</Unit>

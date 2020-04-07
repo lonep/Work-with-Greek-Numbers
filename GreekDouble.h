@@ -11,6 +11,9 @@ class GreekDouble: public AbstractGreek {
 public:
     string ToString() override;
     double ToDouble() override;
+
+private:
+    double FromGreekToArab();
 };
 
 

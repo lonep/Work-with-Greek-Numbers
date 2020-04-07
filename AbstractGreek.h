@@ -13,5 +13,6 @@ public:
 protected:
     virtual string ToString() = 0;
     virtual double ToDouble() = 0;
+    int checkBiggerNumberAndGive(char a1, char a2);
 };
 #endif //LABA1_ABSTRACTGREEK_H

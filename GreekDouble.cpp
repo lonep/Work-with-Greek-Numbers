@@ -3,3 +3,15 @@
 //
 
 #include "GreekDouble.h"
+
+double GreekDouble::FromGreekToArab() {
+
+}
+
+string GreekDouble::ToString() {
+
+}
+
+double GreekDouble::ToDouble() {
+
+}

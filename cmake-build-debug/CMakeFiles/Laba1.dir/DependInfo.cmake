@@ -4,6 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "C:/Users/lonep/Documents/GitHub/Work-with-Greek-Numbers/AbstractGreek.h.cpp" "C:/Users/lonep/Documents/GitHub/Work-with-Greek-Numbers/cmake-build-debug/CMakeFiles/Laba1.dir/AbstractGreek.h.cpp.obj"
   "C:/Users/lonep/Documents/GitHub/Work-with-Greek-Numbers/ArabNumber.cpp" "C:/Users/lonep/Documents/GitHub/Work-with-Greek-Numbers/cmake-build-debug/CMakeFiles/Laba1.dir/ArabNumber.cpp.obj"
   "C:/Users/lonep/Documents/GitHub/Work-with-Greek-Numbers/GreekDouble.cpp" "C:/Users/lonep/Documents/GitHub/Work-with-Greek-Numbers/cmake-build-debug/CMakeFiles/Laba1.dir/GreekDouble.cpp.obj"
   "C:/Users/lonep/Documents/GitHub/Work-with-Greek-Numbers/GreekNumber.cpp" "C:/Users/lonep/Documents/GitHub/Work-with-Greek-Numbers/cmake-build-debug/CMakeFiles/Laba1.dir/GreekNumber.cpp.obj"
