@@ -1,8 +1,8 @@
 #include <iostream>
 #include "GreekNumber.h"
 #include "ArabNumber.h"
+#include "GreekDouble.h"
 #include <String>
-
 
 using namespace std;
 // Составить метод для переволи из римских в арабские и наоборот
@@ -10,8 +10,8 @@ using namespace std;
 //+5 - использовать юникод
 
 int main() {
-GreekNumber gr1;
-gr1.Number = "VII";
-cout << gr1.ToDouble() << '\n';
-cout << gr1.ToString();
+    GreekDouble Do;
+   Do.Number = "XII.IV";
+   cout << Do.ToDouble() << ' ' << Do.ToString();
+
 }

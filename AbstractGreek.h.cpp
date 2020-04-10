@@ -3,7 +3,7 @@
 //
 #include "AbstractGreek.h"
 
-int AbstractGreek::checkBiggerNumberAndGive(char a1, char a2) {
+int AbstractGreek:: checkBiggerNumberAndGive(char a1, char a2) {
     char b[2];
     b[0] = a1;
     b[1] = a2;

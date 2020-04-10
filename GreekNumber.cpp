@@ -26,3 +26,9 @@ string GreekNumber::ToString() {
 double GreekNumber::ToDouble() {
     return this->FromGreekToArab();
 }
+
+GreekDouble GreekNumber::operator+ (GreekDouble plus) {
+    double result;
+   result = plus.ToDouble();
+   result = plus.ToDouble() + FromGreekToArab();
+}

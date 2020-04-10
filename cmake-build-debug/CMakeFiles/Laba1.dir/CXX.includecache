@@ -10,23 +10,15 @@ C:/Users/lonep/Documents/GitHub/Work-with-Greek-Numbers/AbstractGreek.h
 string
 -
 
-C:/Users/lonep/Documents/GitHub/Work-with-Greek-Numbers/ArabNumber.h
-string
--
-
-C:/Users/lonep/Documents/GitHub/Work-with-Greek-Numbers/GreekNumber.h
-string
--
-AbstractGreek.h
-C:/Users/lonep/Documents/GitHub/Work-with-Greek-Numbers/AbstractGreek.h
-
-C:/Users/lonep/Documents/GitHub/Work-with-Greek-Numbers/main.cpp
+C:/Users/lonep/Documents/GitHub/Work-with-Greek-Numbers/GreekDouble.cpp
+GreekDouble.h
+C:/Users/lonep/Documents/GitHub/Work-with-Greek-Numbers/GreekDouble.h
 iostream
 -
-GreekNumber.h
-C:/Users/lonep/Documents/GitHub/Work-with-Greek-Numbers/GreekNumber.h
-ArabNumber.h
-C:/Users/lonep/Documents/GitHub/Work-with-Greek-Numbers/ArabNumber.h
-String
+string
 -
+
+C:/Users/lonep/Documents/GitHub/Work-with-Greek-Numbers/GreekDouble.h
+AbstractGreek.h
+C:/Users/lonep/Documents/GitHub/Work-with-Greek-Numbers/AbstractGreek.h
 
