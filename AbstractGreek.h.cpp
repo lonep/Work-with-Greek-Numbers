@@ -28,3 +28,10 @@ int AbstractGreek:: checkBiggerNumberAndGive(char a1, char a2) {
         return num[0];
     else return  (num[0]*(-1));
 }
+void AbstractGreek::operator=(double st) {
+
+}
+ void AbstractGreek::operator=(string st) {
+
+}
+

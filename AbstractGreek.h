@@ -10,9 +10,11 @@ using namespace  std;
 class AbstractGreek{
 public:
     string Number;
-protected:
     virtual string ToString() = 0;
     virtual double ToDouble() = 0;
     int checkBiggerNumberAndGive(char a1, char a2);
+    virtual int FromGreekToArab() = 0;
+    virtual void operator= (string st);
+    virtual void operator= (double st);
 };
 #endif //LABA1_ABSTRACTGREEK_H

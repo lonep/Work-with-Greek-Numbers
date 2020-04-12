@@ -5,6 +5,10 @@
 #include "GreekDouble.h"
 #include <iostream>
 #include <string>
+#include "ArabNumber.h"
+#include <cstdlib>
+#include "GreekNumber.h"
+
 
 
 int GreekDouble::FromGreekToArab(){
@@ -59,5 +63,51 @@ double GreekDouble::ToDouble() {
 }
 
 string GreekDouble::FromDoubleToGreek(double ArabNumeral){
-    //string result = static_cast<int>(ArabNumeral) + (ArabNumeral); // Сделать ветвление через if до трех тысяч.
+    string k1,k2;
+    k1 = '0';
+    k2 = '0';
+    int i = 0;
+    string s = to_string(ArabNumeral);
+    while (s[i]!='.'){
+        k1[i] = s[i];
+        i++;
+    }
+    int r = 0;
+    i++;
+
+    try {
+        if (s[i] == '0')
+            throw std::logic_error("Greek number don't use zero");
+    }
+    catch(std::logic_error) {
+        return "0";
+    }
+     {
+        while (s[i] == '1' || s[i] == '2' || s[i] == '3' || s[i] == '4' || s[i] == '5' || s[i] == '6' || s[i] == '7' ||
+               s[i] == '8' || s[i] == '9') {
+            k2[r] = s[i];
+            i++;
+            r++;
+        }
+    }
+    ArabNumber ar1, ar2;
+    ar1.Number = atoi(k1.c_str());
+    ar2.Number = atoi(k2.c_str());
+
+    string result = ar1.FromArabToGreek() + '.' + ar2.FromArabToGreek();
+    return result;
 }
+
+void GreekDouble::operator=(string st) {
+    this->Number = st;
+}
+
+void GreekDouble::operator=(double st) {
+    this->Number = FromDoubleToGreek(st);
+}
+
+string GreekDouble::Plus(GreekDouble plus, GreekDouble plus1) {
+ double dou = plus.ToDouble() + plus1.ToDouble();
+ return FromDoubleToGreek(dou);
+}
+

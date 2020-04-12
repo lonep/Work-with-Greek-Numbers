@@ -6,14 +6,18 @@
 #define LABA1_GREEKDOUBLE_H
 
 #include "AbstractGreek.h"
+#include "GreekDouble.h"
 
 class GreekDouble: public AbstractGreek {
 public:
     string ToString() override;
     double ToDouble() override;
-    string FromDoubleToGreek(double ArabNumeral);
+    void operator= (string st) override;
+    void operator= (double st) override;
+    static string FromDoubleToGreek(double ArabNumeral);
+    static string Plus(GreekDouble plus, GreekDouble plus1);
 private:
-    int FromGreekToArab();
+    int FromGreekToArab() override;
     double FromGreekToArabDouble();
 };
 

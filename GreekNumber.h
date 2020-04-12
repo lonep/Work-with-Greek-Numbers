@@ -10,12 +10,12 @@
 using namespace std;
 class GreekNumber: public AbstractGreek {
 public:
-    int FromGreekToArab();
     string ToString() override;
     double ToDouble() override;
-    GreekNumber operator+ (GreekNumber plus);
-    GreekDouble operator+ (GreekDouble plus);
-private:
-
+    int FromGreekToArab() override;
+    static string Plus(GreekNumber plus, GreekNumber plus1);
+    static string Plus(GreekNumber plus, GreekDouble plus1);
+    void operator= (string st);
+    void operator= (double st);
 };
 #endif //LABA1_GREEKNUMBER_H
