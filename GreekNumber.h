@@ -13,9 +13,8 @@ public:
     string ToString() override;
     double ToDouble() override;
     int FromGreekToArab() override;
-    static string Plus(GreekNumber plus, GreekNumber plus1);
-    static string Plus(GreekNumber plus, GreekDouble plus1);
     void operator= (string st);
     void operator= (double st);
+    static GreekNumber Plus(GreekNumber plus1, GreekNumber plus2);
 };
 #endif //LABA1_GREEKNUMBER_H

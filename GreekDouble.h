@@ -15,7 +15,7 @@ public:
     void operator= (string st) override;
     void operator= (double st) override;
     static string FromDoubleToGreek(double ArabNumeral);
-    static string Plus(GreekDouble plus, GreekDouble plus1);
+    static GreekDouble Plus(GreekDouble plus1, GreekDouble plus2);
 private:
     int FromGreekToArab() override;
     double FromGreekToArabDouble();

@@ -4,6 +4,7 @@
 #include "GreekNumber.h"
 #include "ArabNumber.h"
 #include <iostream>
+#include <string>
 using namespace std;
 
 int GreekNumber::FromGreekToArab(){
@@ -22,20 +23,40 @@ double GreekNumber::ToDouble() {
     return this->FromGreekToArab();
 }
 
-string GreekNumber::Plus(GreekNumber plus, GreekNumber plus1) {
-    double dou = plus.ToDouble() + plus1.ToDouble();
-    return  GreekDouble::FromDoubleToGreek(dou);
-}
-
-string GreekNumber::Plus(GreekNumber plus, GreekDouble plus1) {
-    double dou = plus.ToDouble() + plus1.ToDouble();
-    return GreekDouble::FromDoubleToGreek(dou);
-}
-
 void GreekNumber::operator=(double st) {
-    this->Number = GreekDouble::FromDoubleToGreek(st);
+    int i = 0;
+    string test = to_string(st);
+    int k = test.find('.');
+    string dou = GreekDouble::FromDoubleToGreek(st);
+    if (k  == -1){
+        this->Number = GreekDouble::FromDoubleToGreek(st);
+    }
+    else {
+        while (i < k) {
+            this->Number += dou[i];
+            i++;
+        }
+    }
 }
 
 void GreekNumber::operator=(string st) {
-    this->Number = st;
+    string INT;
+    int k = st.find('.');
+    if (k == -1){
+        this->Number = st;
+    } else {
+        int i = 0;
+        while (i < k) {
+            INT += st[i];
+            i++;
+        }
+        this->Number = INT;
+    }
+}
+
+GreekNumber GreekNumber::Plus(GreekNumber plus1, GreekNumber plus2) {
+    double res = plus1.FromGreekToArab() + plus2.FromGreekToArab();
+    GreekNumber result;
+    result.Number = GreekDouble::FromDoubleToGreek(res);
+    return result;
 }

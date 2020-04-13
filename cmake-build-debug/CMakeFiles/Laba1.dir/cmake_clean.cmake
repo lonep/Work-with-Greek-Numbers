@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/Laba1.dir/AbstractGreek.h.cpp.obj"
+  "CMakeFiles/Laba1.dir/AbstractGreek.cpp.obj"
   "CMakeFiles/Laba1.dir/ArabNumber.cpp.obj"
   "CMakeFiles/Laba1.dir/GreekDouble.cpp.obj"
   "CMakeFiles/Laba1.dir/GreekNumber.cpp.obj"
