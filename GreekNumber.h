@@ -16,5 +16,6 @@ public:
     void operator= (string st);
     void operator= (double st);
     static GreekNumber Plus(GreekNumber plus1, GreekNumber plus2);
+    static GreekDouble Plus(GreekNumber plus1, GreekDouble plus2);
 };
 #endif //LABA1_GREEKNUMBER_H

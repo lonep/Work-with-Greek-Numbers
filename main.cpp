@@ -14,10 +14,10 @@ int main() {
     AbstractGreek *array[5];
     GreekDouble Do, Do2, Do4;
     GreekNumber Gr1, Gr3;
-    
-    Do.Number = "V.V";
-    Gr1.Number = "V";
-    Do2.Number = "V.I";
+
+    Do.Number = "V.XI";
+    Gr1.Number = "III";
+    Do2.Number = "V.IV";
     Gr3.Number = "IV";
     Do4.Number = "X.I";
 
@@ -38,15 +38,16 @@ int main() {
     cout << "- ToString" << '\n';
 
     for (int i = 0; i < 5; i++){
-        *array[i] = 4.4;
+        *array[i] = 7.9;
         cout << array[i]->ToString() << ' ';
     }
     cout << " = for double" << '\n';
 
     for (int i = 0; i < 5; i++){
-        *array[i] = "V.I";
+        *array[i] = "VII.IX";
         cout << array[i]->ToString() << ' ';
     }
     cout << " = for string" << '\n';
 
+    cout <<  GreekNumber::Plus(Gr1, Do2).ToDouble();
 }

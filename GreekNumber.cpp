@@ -26,12 +26,13 @@ double GreekNumber::ToDouble() {
 void GreekNumber::operator=(double st) {
     int i = 0;
     string test = to_string(st);
-    int k = test.find('.');
+    int k = GreekDouble::FromDoubleToGreek(st).find('.');
     string dou = GreekDouble::FromDoubleToGreek(st);
     if (k  == -1){
         this->Number = GreekDouble::FromDoubleToGreek(st);
     }
     else {
+        this->Number.erase(0, test.length());
         while (i < k) {
             this->Number += dou[i];
             i++;
@@ -57,6 +58,12 @@ void GreekNumber::operator=(string st) {
 GreekNumber GreekNumber::Plus(GreekNumber plus1, GreekNumber plus2) {
     double res = plus1.FromGreekToArab() + plus2.FromGreekToArab();
     GreekNumber result;
+    result.Number = GreekDouble::FromDoubleToGreek(res);
+    return result;
+}
+GreekDouble GreekNumber::Plus(GreekNumber plus1, GreekDouble plus2) {
+    double res = plus1.FromGreekToArab() + plus2.ToDouble();
+    GreekDouble result;
     result.Number = GreekDouble::FromDoubleToGreek(res);
     return result;
 }
