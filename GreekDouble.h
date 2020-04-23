@@ -16,6 +16,8 @@ public:
     void operator= (double st) override;
     static string FromDoubleToGreek(double ArabNumeral);
     static GreekDouble Plus(GreekDouble plus1, GreekDouble plus2);
+    friend istream& operator>> (istream& in, GreekDouble& right);
+    friend ostream& operator<< (ostream& out, GreekDouble& right);
 private:
     int FromGreekToArab() override;
     double FromGreekToArabDouble();

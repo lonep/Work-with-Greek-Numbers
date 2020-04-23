@@ -35,3 +35,14 @@ void AbstractGreek::operator=(double st) {
 
 }
 
+double AbstractGreek::ToDouble() {
+
+}
+
+string AbstractGreek::ToString() {
+
+}
+
+int AbstractGreek::FromGreekToArab() {
+
+}

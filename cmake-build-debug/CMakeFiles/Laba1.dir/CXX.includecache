@@ -28,6 +28,14 @@ C:/Users/lonep/Documents/GitHub/Work-with-Greek-Numbers/AbstractGreek.h
 GreekDouble.h
 C:/Users/lonep/Documents/GitHub/Work-with-Greek-Numbers/GreekDouble.h
 
+C:/Users/lonep/Documents/GitHub/Work-with-Greek-Numbers/MyStack.cpp
+MyStack.h
+C:/Users/lonep/Documents/GitHub/Work-with-Greek-Numbers/MyStack.h
+
+C:/Users/lonep/Documents/GitHub/Work-with-Greek-Numbers/MyStack.h
+GreekNumber.h
+C:/Users/lonep/Documents/GitHub/Work-with-Greek-Numbers/GreekNumber.h
+
 C:/Users/lonep/Documents/GitHub/Work-with-Greek-Numbers/main.cpp
 iostream
 -
@@ -41,4 +49,6 @@ String
 -
 cstdlib
 -
+MyStack.h
+C:/Users/lonep/Documents/GitHub/Work-with-Greek-Numbers/MyStack.h
 

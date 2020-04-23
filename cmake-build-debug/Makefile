@@ -230,6 +230,33 @@ GreekNumber.cpp.s:
 	$(MAKE) -f CMakeFiles\Laba1.dir\build.make CMakeFiles/Laba1.dir/GreekNumber.cpp.s
 .PHONY : GreekNumber.cpp.s
 
+MyStack.obj: MyStack.cpp.obj
+
+.PHONY : MyStack.obj
+
+# target to build an object file
+MyStack.cpp.obj:
+	$(MAKE) -f CMakeFiles\Laba1.dir\build.make CMakeFiles/Laba1.dir/MyStack.cpp.obj
+.PHONY : MyStack.cpp.obj
+
+MyStack.i: MyStack.cpp.i
+
+.PHONY : MyStack.i
+
+# target to preprocess a source file
+MyStack.cpp.i:
+	$(MAKE) -f CMakeFiles\Laba1.dir\build.make CMakeFiles/Laba1.dir/MyStack.cpp.i
+.PHONY : MyStack.cpp.i
+
+MyStack.s: MyStack.cpp.s
+
+.PHONY : MyStack.s
+
+# target to generate assembly for a file
+MyStack.cpp.s:
+	$(MAKE) -f CMakeFiles\Laba1.dir\build.make CMakeFiles/Laba1.dir/MyStack.cpp.s
+.PHONY : MyStack.cpp.s
+
 main.obj: main.cpp.obj
 
 .PHONY : main.obj
@@ -278,6 +305,9 @@ help:
 	@echo ... GreekNumber.obj
 	@echo ... GreekNumber.i
 	@echo ... GreekNumber.s
+	@echo ... MyStack.obj
+	@echo ... MyStack.i
+	@echo ... MyStack.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

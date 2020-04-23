@@ -19,9 +19,16 @@ CMakeFiles/Laba1.dir/GreekNumber.cpp.obj: ../GreekDouble.h
 CMakeFiles/Laba1.dir/GreekNumber.cpp.obj: ../GreekNumber.cpp
 CMakeFiles/Laba1.dir/GreekNumber.cpp.obj: ../GreekNumber.h
 
+CMakeFiles/Laba1.dir/MyStack.cpp.obj: ../AbstractGreek.h
+CMakeFiles/Laba1.dir/MyStack.cpp.obj: ../GreekDouble.h
+CMakeFiles/Laba1.dir/MyStack.cpp.obj: ../GreekNumber.h
+CMakeFiles/Laba1.dir/MyStack.cpp.obj: ../MyStack.cpp
+CMakeFiles/Laba1.dir/MyStack.cpp.obj: ../MyStack.h
+
 CMakeFiles/Laba1.dir/main.cpp.obj: ../AbstractGreek.h
 CMakeFiles/Laba1.dir/main.cpp.obj: ../ArabNumber.h
 CMakeFiles/Laba1.dir/main.cpp.obj: ../GreekDouble.h
 CMakeFiles/Laba1.dir/main.cpp.obj: ../GreekNumber.h
+CMakeFiles/Laba1.dir/main.cpp.obj: ../MyStack.h
 CMakeFiles/Laba1.dir/main.cpp.obj: ../main.cpp
 

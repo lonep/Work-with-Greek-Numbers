@@ -17,5 +17,7 @@ public:
     void operator= (double st);
     static GreekNumber Plus(GreekNumber plus1, GreekNumber plus2);
     static GreekDouble Plus(GreekNumber plus1, GreekDouble plus2);
+    friend istream& operator>> (istream& in, GreekNumber& right);
+    friend ostream& operator<< (ostream& out, GreekNumber& right);
 };
 #endif //LABA1_GREEKNUMBER_H

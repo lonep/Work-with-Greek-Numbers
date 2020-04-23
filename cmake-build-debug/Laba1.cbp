@@ -104,6 +104,12 @@
 		<Unit filename="C:/Users/lonep/Documents/GitHub/Work-with-Greek-Numbers/GreekNumber.h">
 			<Option target="Laba1"/>
 		</Unit>
+		<Unit filename="C:/Users/lonep/Documents/GitHub/Work-with-Greek-Numbers/MyStack.cpp">
+			<Option target="Laba1"/>
+		</Unit>
+		<Unit filename="C:/Users/lonep/Documents/GitHub/Work-with-Greek-Numbers/MyStack.h">
+			<Option target="Laba1"/>
+		</Unit>
 		<Unit filename="C:/Users/lonep/Documents/GitHub/Work-with-Greek-Numbers/main.cpp">
 			<Option target="Laba1"/>
 		</Unit>

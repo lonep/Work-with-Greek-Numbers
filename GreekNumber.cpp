@@ -67,3 +67,31 @@ GreekDouble GreekNumber::Plus(GreekNumber plus1, GreekDouble plus2) {
     result.Number = GreekDouble::FromDoubleToGreek(res);
     return result;
 }
+
+istream& operator>> (istream& in, GreekNumber& right){
+    string a;
+    in >> a;
+    if (a[0] == '1' || a[0] == '2' || a[0] == '3' || a[0] == '4' || a[0] == '5' || a[0] == '6' || a[0] == '7' || a[0] == '8' || a[0] == '9' || a[0] == '0') {
+        ArabNumber ArabRes;
+        ArabRes.Number = atoi(a.c_str());
+        right.Number = ArabRes.FromArabToGreek();
+    }
+    else if (a[0] ==  'I' || a[0] == 'V' || a[0] == 'X' || a[0] == 'L' || a[0] == 'C' || a[0] == 'D' || a[0] == 'M') {
+        right.Number = a;
+
+    }
+    else
+        cout << "You tried to input wrong data";
+    return in;
+
+}
+
+ostream& operator<<(ostream& out, GreekNumber& right) {
+
+    string a = right.Number;
+
+    out << a;
+
+    return out;
+
+}

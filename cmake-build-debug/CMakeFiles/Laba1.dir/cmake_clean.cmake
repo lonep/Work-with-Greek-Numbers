@@ -3,6 +3,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Laba1.dir/ArabNumber.cpp.obj"
   "CMakeFiles/Laba1.dir/GreekDouble.cpp.obj"
   "CMakeFiles/Laba1.dir/GreekNumber.cpp.obj"
+  "CMakeFiles/Laba1.dir/MyStack.cpp.obj"
   "CMakeFiles/Laba1.dir/main.cpp.obj"
   "Laba1.exe"
   "Laba1.exe.manifest"

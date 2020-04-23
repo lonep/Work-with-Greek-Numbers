@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "C:/Users/lonep/Documents/GitHub/Work-with-Greek-Numbers/ArabNumber.cpp" "C:/Users/lonep/Documents/GitHub/Work-with-Greek-Numbers/cmake-build-debug/CMakeFiles/Laba1.dir/ArabNumber.cpp.obj"
   "C:/Users/lonep/Documents/GitHub/Work-with-Greek-Numbers/GreekDouble.cpp" "C:/Users/lonep/Documents/GitHub/Work-with-Greek-Numbers/cmake-build-debug/CMakeFiles/Laba1.dir/GreekDouble.cpp.obj"
   "C:/Users/lonep/Documents/GitHub/Work-with-Greek-Numbers/GreekNumber.cpp" "C:/Users/lonep/Documents/GitHub/Work-with-Greek-Numbers/cmake-build-debug/CMakeFiles/Laba1.dir/GreekNumber.cpp.obj"
+  "C:/Users/lonep/Documents/GitHub/Work-with-Greek-Numbers/MyStack.cpp" "C:/Users/lonep/Documents/GitHub/Work-with-Greek-Numbers/cmake-build-debug/CMakeFiles/Laba1.dir/MyStack.cpp.obj"
   "C:/Users/lonep/Documents/GitHub/Work-with-Greek-Numbers/main.cpp" "C:/Users/lonep/Documents/GitHub/Work-with-Greek-Numbers/cmake-build-debug/CMakeFiles/Laba1.dir/main.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
