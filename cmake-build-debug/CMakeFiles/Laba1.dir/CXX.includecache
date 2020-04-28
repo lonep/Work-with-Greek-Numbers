@@ -10,10 +10,6 @@ C:/Users/lonep/Documents/GitHub/Work-with-Greek-Numbers/AbstractGreek.h
 string
 -
 
-C:/Users/lonep/Documents/GitHub/Work-with-Greek-Numbers/ArabNumber.h
-string
--
-
 C:/Users/lonep/Documents/GitHub/Work-with-Greek-Numbers/GreekDouble.h
 AbstractGreek.h
 C:/Users/lonep/Documents/GitHub/Work-with-Greek-Numbers/AbstractGreek.h
@@ -28,26 +24,18 @@ C:/Users/lonep/Documents/GitHub/Work-with-Greek-Numbers/AbstractGreek.h
 GreekDouble.h
 C:/Users/lonep/Documents/GitHub/Work-with-Greek-Numbers/GreekDouble.h
 
-C:/Users/lonep/Documents/GitHub/Work-with-Greek-Numbers/MyStack.cpp
-MyStack.h
 C:/Users/lonep/Documents/GitHub/Work-with-Greek-Numbers/MyStack.h
-
-C:/Users/lonep/Documents/GitHub/Work-with-Greek-Numbers/MyStack.h
-GreekNumber.h
-C:/Users/lonep/Documents/GitHub/Work-with-Greek-Numbers/GreekNumber.h
+AbstractGreek.h
+C:/Users/lonep/Documents/GitHub/Work-with-Greek-Numbers/AbstractGreek.h
 
 C:/Users/lonep/Documents/GitHub/Work-with-Greek-Numbers/main.cpp
 iostream
 -
 GreekNumber.h
 C:/Users/lonep/Documents/GitHub/Work-with-Greek-Numbers/GreekNumber.h
-ArabNumber.h
-C:/Users/lonep/Documents/GitHub/Work-with-Greek-Numbers/ArabNumber.h
 GreekDouble.h
 C:/Users/lonep/Documents/GitHub/Work-with-Greek-Numbers/GreekDouble.h
 String
--
-cstdlib
 -
 MyStack.h
 C:/Users/lonep/Documents/GitHub/Work-with-Greek-Numbers/MyStack.h

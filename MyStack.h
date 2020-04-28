@@ -4,19 +4,24 @@
 
 #ifndef LABA1_MYSTACK_H
 #define LABA1_MYSTACK_H
-#include "GreekNumber.h"
-class MyStack{
+
+#include "AbstractGreek.h"
+class MyStack {
 private:
     struct element {
-        GreekNumber number;
+        AbstractGreek* number;
         element *point;
     };
     element *top = 0;
     int index = 0;
     element *lasttop = 0;
 public:
-    void push(GreekNumber &d);
-    GreekNumber pop();
+    void push(AbstractGreek &d);
+
+    AbstractGreek &pop();
+
     int length();
+
+
 };
 #endif //LABA1_MYSTACK_H

@@ -16,5 +16,6 @@ public:
     virtual int FromGreekToArab();
     virtual void operator= (string st);
     virtual void operator= (double st);
+
 };
 #endif //LABA1_ABSTRACTGREEK_H

@@ -93,5 +93,49 @@ ostream& operator<<(ostream& out, GreekNumber& right) {
     out << a;
 
     return out;
+}
+GreekDouble GreekNumber::Plus(GreekDouble plus1,GreekDouble plus2) {
+    double res = plus1.ToDouble() + plus2.ToDouble();
+    GreekDouble result;
+    result.Number = GreekDouble::FromDoubleToGreek(res);
+    return  result;
+}
+GreekDouble GreekNumber::Plus(GreekDouble plus1, GreekNumber plus2) {
+    double res = plus1.ToDouble() + plus2.ToDouble();
+    GreekDouble result;
+    result.Number = GreekDouble::FromDoubleToGreek(res);
+    return  result;
+}
 
+AbstractGreek GreekNumber::Plus(AbstractGreek plus1, AbstractGreek plus2) {
+    if (plus1.Number.find('.') == -1 && plus2.Number.find('.') == -1){
+        GreekNumber Num1, Num2;
+        Num1.Number = plus1.Number;
+        Num2.Number = plus2.Number;
+        plus1.Number = GreekNumber::Plus(Num1,Num2).Number;
+        return plus1;
+    }
+    else if(plus1.Number.find('.') == -1 && plus2.Number.find('.') != -1){
+        GreekNumber Num1;
+        GreekDouble Num2;
+        Num1.Number = plus1.Number;
+        Num2.Number = plus2.Number;
+        plus1.Number = GreekNumber::Plus(Num1,Num2).Number;
+        return plus1;
+    }
+    else if(plus1.Number.find('.') != -1 && plus2.Number.find('.') != -1){
+        GreekDouble Num1, Num2;
+        Num1.Number = plus1.Number;
+        Num2.Number = plus2.Number;
+        plus1.Number = GreekNumber::Plus(Num1,Num2).Number;
+        return plus1;
+    }
+    else if(plus1.Number.find('.') != -1 && plus2.Number.find('.') == -1){
+        GreekDouble Num1;
+        GreekNumber Num2;
+        Num1.Number = plus1.Number;
+        Num2.Number = plus2.Number;
+        plus1.Number = GreekNumber::Plus(Num1,Num2).Number;
+        return plus1;
+    }
 }

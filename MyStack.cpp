@@ -1,28 +1,29 @@
 //
 #include "MyStack.h"
-void MyStack::push(GreekNumber &d) {
+#include <String>
+void MyStack::push(AbstractGreek &d) {
     if (index == 0){
         element *q = new element;
-        q->number = d;
+        q->number = &d;
         q->point = 0;
         top = q;
         index++;
     }
-    if (index > 0){
+    else if (index > 0){
         element *q = new element;
-        q->number = d;
+        q->number = &d;
         q->point = top;
         top = q;
         index++;
     }
 }
 
-GreekNumber MyStack::pop() {
-   element q = *top;
+AbstractGreek& MyStack::pop() {
+   element p = *top;
    delete top;
-   top = q.point;
-    return q.number;
+   top = p.point;
     index--;
+    return *p.number;
 }
 
 int MyStack::length(){
