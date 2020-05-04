@@ -4,9 +4,10 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "D:/CLion 2019.2.2/Work-with-Greek-Numbers/ArabNumber.cpp" "D:/CLion 2019.2.2/Work-with-Greek-Numbers/cmake-build-debug/CMakeFiles/Laba1.dir/ArabNumber.cpp.obj"
-  "D:/CLion 2019.2.2/Work-with-Greek-Numbers/GreekNumber.cpp" "D:/CLion 2019.2.2/Work-with-Greek-Numbers/cmake-build-debug/CMakeFiles/Laba1.dir/GreekNumber.cpp.obj"
-  "D:/CLion 2019.2.2/Work-with-Greek-Numbers/main.cpp" "D:/CLion 2019.2.2/Work-with-Greek-Numbers/cmake-build-debug/CMakeFiles/Laba1.dir/main.cpp.obj"
+  "C:/Users/lonep/Documents/GitHub/Work-with-Greek-Numbers/ArabNumber.cpp" "C:/Users/lonep/Documents/GitHub/Work-with-Greek-Numbers/cmake-build-debug/CMakeFiles/Laba1.dir/ArabNumber.cpp.obj"
+  "C:/Users/lonep/Documents/GitHub/Work-with-Greek-Numbers/GreekNumber.cpp" "C:/Users/lonep/Documents/GitHub/Work-with-Greek-Numbers/cmake-build-debug/CMakeFiles/Laba1.dir/GreekNumber.cpp.obj"
+  "C:/Users/lonep/Documents/GitHub/Work-with-Greek-Numbers/main.cpp" "C:/Users/lonep/Documents/GitHub/Work-with-Greek-Numbers/cmake-build-debug/CMakeFiles/Laba1.dir/main.cpp.obj"
+  "C:/Users/lonep/Documents/GitHub/Work-with-Greek-Numbers/mathExample.cpp" "C:/Users/lonep/Documents/GitHub/Work-with-Greek-Numbers/cmake-build-debug/CMakeFiles/Laba1.dir/mathExample.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

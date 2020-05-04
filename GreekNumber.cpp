@@ -39,24 +39,40 @@ int GreekNumber::FromGreekToArab(){
     return ArabNumber;
 }
 
-
-string GreekNumber::GreekPlus(GreekNumber plus1){
+GreekNumber GreekNumber::operator+(GreekNumber right) {
     ArabNumber ArabRes;
-    ArabRes.Number = FromGreekToArab() + plus1.FromGreekToArab();
-    return ArabRes.FromArabToGreek();
-
+    ArabRes.Number = this->FromGreekToArab()+right.FromGreekToArab();
+    this->Number = ArabRes.FromArabToGreek();
+    return *this;
 }
 
 
-string GreekNumber::GreekMinus(GreekNumber Minus){
+GreekNumber GreekNumber::operator* (GreekNumber right) {
     ArabNumber ArabRes;
-    if (FromGreekToArab() > Minus.FromGreekToArab()) {
-        ArabRes.Number = FromGreekToArab() - Minus.FromGreekToArab();
-        return ArabRes.FromArabToGreek();
-    } else {
-        cout << "We can't use  minus numbers.";
+    ArabRes.Number = this->FromGreekToArab() * right.FromGreekToArab();
+    right.Number = ArabRes.FromArabToGreek();
+    return right;
+}
+
+GreekNumber GreekNumber::operator- (GreekNumber right){
+    ArabNumber ArabRes;
+    if (this->FromGreekToArab() > right.FromGreekToArab()) {
+        ArabRes.Number = this->FromGreekToArab() - right.FromGreekToArab();
+        right.Number = ArabRes.FromArabToGreek();
+        return right;
+    }
+    else {
+        cout << "We can't work with negative numbers";
     }
 }
+
+
+void GreekNumber::operator= (GreekNumber right){
+    this->Number = right.Number;
+}
+
+
+
 
 void GreekNumber::EnterGreekNumber(){
     cout << "Enter your Greek number:" << '\n';

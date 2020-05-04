@@ -2,15 +2,14 @@
 #include "GreekNumber.h"
 #include "ArabNumber.h"
 #include <String>
-
-
+#include "mathExample.h"
 using namespace std;
-// Составить метод для переволи из римских в арабские и наоборот
-// Простейшие операции с римскими числами
-//+5 - использовать юникод
+
+
 
 int main() {
-ArabNumber Num;
-Num.Number = 19;
-cout << Num.FromArabToGreek();
+    mathExample ex;
+    while (int x = 3 > 0){
+        ex.GetEqual();
+    }
 }
