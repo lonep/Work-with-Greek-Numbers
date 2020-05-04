@@ -111,33 +111,59 @@ void mathExample::GetEqual() {
         results << "a = " <<  bInt << '\n';
     }
     if (operat == "+"){
-        if(checkVariable(a) != 0){
+        if(checkVariable(a) != 0 && checkVariable(b) == 0){
            cout << variables[a] + bInt << '\n';
             results << variables[a] << "+" <<  bInt <<"="<< variables[a] + bInt <<'\n';
         } else {
-            cout << aInt + bInt << '\n';
-            results << a << "+" << b << "=" <<aInt + bInt << '\n';
+            if (checkVariable(a) != 0 && checkVariable(b) != 0){
+                cout << variables[a] + variables[b] << '\n';
+                results << variables[a] << "+" <<  variables[b] <<"="<< variables[a] + variables[b] <<'\n';
+            }
+            else {
+                cout << aInt + bInt << '\n';
+                results << a << "+" << b << "=" << aInt + bInt << '\n';
+            }
         }
     }
     if (operat == "-"){
-        if(checkVariable(a) != 0){
+        if(checkVariable(a) != 0 && checkVariable(b) == 0){
+            cout << variables[a] + bInt << '\n';
             results << variables[a] << "-" <<  bInt <<"="<< variables[a] - bInt <<'\n';
-            cout << variables[a] - bInt << '\n';
         } else {
-            results << a << "-" << b << "=" <<aInt + bInt << '\n';
-            cout << aInt - bInt << '\n';
+            if (checkVariable(a) != 0 && checkVariable(b) != 0){
+                cout << variables[a] - variables[b] << '\n';
+                results << variables[a] << "+" <<  variables[b] <<"="<< variables[a] - variables[b] <<'\n';
+            }
+            else {
+                cout << aInt + bInt << '\n';
+                results << a << "-" << b << "=" << aInt - bInt << '\n';
+            }
         }
     }
     if (operat == "*") {
-        if (checkVariable(a) != 0) {
+        if(checkVariable(a) != 0 && checkVariable(b) == 0){
             cout << variables[a] * bInt << '\n';
             results << variables[a] << "*" <<  bInt <<"="<< variables[a] * bInt <<'\n';
         } else {
-            cout << aInt * bInt << '\n';
-            results << a << "*" << b << "=" <<aInt + bInt << '\n';
+            if (checkVariable(a) != 0 && checkVariable(b) != 0){
+                cout << variables[a] * variables[b] << '\n';
+                results << variables[a] << "*" <<  variables[b] <<"="<< variables[a] * variables[b] <<'\n';
+            }
+            else {
+                cout << aInt + bInt << '\n';
+                results << a << "*" << b << "=" << aInt * bInt << '\n';
+            }
         }
     }
 results.close();
+}
+
+void mathExample::printInstruction() {
+    cout << "Guide for using a calculator" << '\n';
+    cout << "You can use +, -, * operators" << '\n';
+    cout << "Also you can use '=' for create variable like a = 5" << '\n';
+    cout << "Please always use space between numbers and operators" << '\n';
+    cout << "Examples commands: 5 + 5, a = 5, b = 5, a + b, 5 * 5, a = II, II * III"<< '\n';
 }
 
 

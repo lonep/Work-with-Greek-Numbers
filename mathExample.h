@@ -16,7 +16,9 @@ private:
     bool checkVariable(string str);
     short checkType(string a, string b);
     ofstream results;
+
 public:
+    static void printInstruction();
     void GetEqual();
 };
 
