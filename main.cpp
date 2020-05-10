@@ -10,7 +10,7 @@ using namespace std;
 int main() {
     mathExample::printInstruction();
     mathExample ex;
-    while (int x = 3 > 0){
+    while (1){
         ex.GetEqual();
     }
 }

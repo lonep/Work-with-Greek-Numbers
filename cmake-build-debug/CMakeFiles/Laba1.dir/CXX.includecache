@@ -6,25 +6,9 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/lonep/Documents/GitHub/Work-with-Greek-Numbers/ArabNumber.h
-string
--
-
 C:/Users/lonep/Documents/GitHub/Work-with-Greek-Numbers/GreekNumber.h
 string
 -
-
-C:/Users/lonep/Documents/GitHub/Work-with-Greek-Numbers/main.cpp
-iostream
--
-GreekNumber.h
-C:/Users/lonep/Documents/GitHub/Work-with-Greek-Numbers/GreekNumber.h
-ArabNumber.h
-C:/Users/lonep/Documents/GitHub/Work-with-Greek-Numbers/ArabNumber.h
-String
--
-mathExample.h
-C:/Users/lonep/Documents/GitHub/Work-with-Greek-Numbers/mathExample.h
 
 C:/Users/lonep/Documents/GitHub/Work-with-Greek-Numbers/mathExample.cpp
 mathExample.h
